@@ -1,7 +1,5 @@
-# nimble-admin-boilerplate
-
-Database -- 
-
+###Database -- 
+```sql
 CREATE TABLE `admin_users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
@@ -28,3 +26,4 @@ CREATE TABLE `operatives` (
   `status` int(1) DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin;
+```
