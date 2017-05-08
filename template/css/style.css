@@ -1,0 +1,402 @@
+
+/* General */
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444;
+  background: #f9f9f9;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+body > header,
+body > section,
+body > footer {
+  display: block;
+  width: 100%;
+  clear: both;
+  float: left;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -.05em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+@media screen and (max-width: 568px) {
+	h1 {
+	  font-size: 2em;
+	}
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+a {
+  color: #c00;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.center
+{
+	text-align:center;
+}
+
+.white-txt
+{
+	color:#FFF;
+}
+
+header, section {
+  border-bottom: 1px solid #eee;
+}
+
+header, section, footer {
+  border-top: 1px solid #fff;
+}
+
+section, footer {
+  padding: 30px 0;
+}
+
+header h1 a {
+  color: #333;
+  border-bottom: none;
+}
+
+header p {
+  margin: 2em 0;
+}
+
+.lead {
+  font-size: 1.5em;
+}
+
+p, pre {
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.pull-right
+{
+	float:right;
+}
+
+.icon
+{
+	font-size:2em;
+}
+
+.button {
+  border-radius: 5px;
+  background: #efefef;
+  background-image: -moz-linear-gradient(#FCFCFC, #EFEFEF);
+  background-image: -webkit-linear-gradient(#FCFCFC, #EFEFEF);
+  background-image: -ms-linear-gradient(#FCFCFC, #EFEFEF);
+  background-image: linear-gradient(#FCFCFC, #EFEFEF);
+  border: 1px solid #DDDDDD;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1);
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: .5em;
+}
+
+.button:hover, .button:focus {
+  outline: none;
+  border: 1px solid rgba(0,0,0,.5);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 0 10px rgba(0,0,0,.3);
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+@media (min-width: 960px){
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 2.6em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  .lead {
+    font-size: 1.8em;
+  }
+}
+
+/* Styles to help demonstrate the grid */
+
+code, pre {
+  font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace;
+  background: #f1f1f1;
+  color: #333;
+  padding: 3px; 
+}
+
+pre {
+  padding: 10px;
+  text-align: center;
+}
+
+.demo p {
+  margin: 0;
+}
+
+.demo .unit pre {
+  margin: 0;
+  padding: 20px 0;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+
+
+.grid, .unit {
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.demo .unit .grid {
+  overflow: hidden;
+}
+
+.demo .unit .grid:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.demo .unit .grid:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.top_head
+{
+
+    color: #FFF;
+    background: #333;
+    border-top: 0; 
+}
+.mid_head
+{
+    background: #eee; 
+    border-top: 0px;      
+}
+.mid_head .unit pre
+{
+  background: none;
+}
+
+/* The important stuff */
+.table-container{
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    border: 1px solid #c3c9cc;
+}
+
+
+/* Making it pretty */
+
+table
+{ 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+    background-color: white;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: .9em;
+}
+th, td{
+    padding: 1em 0.75em;
+    text-align: left;
+}
+th{
+    background-color: #f5f5f5;
+    white-space: nowrap;
+}
+td{
+    border-top: 1px solid #c3c9cc;
+}
+
+/* FORM STUFF [START] */
+
+	input, textarea, select{
+		font-size: 16px;
+		width:100%;
+		margin-bottom: 10px;
+		height: 40px;
+		border: none;
+		background: #FFF;
+		padding-left: 10px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;   
+		box-sizing: border-box;	
+		-webkit-appearance: none;
+	    -webkit-border-radius: 0px;
+	    -moz-border-radius: 0px;
+	    border-radius: 0px;		
+	}
+
+	select 
+	{
+		appearance:button;
+		-moz-appearance:button; /* Firefox */
+		-webkit-appearance:button; /* Safari and Chrome */	
+	}
+
+	input.has-error, textarea.has-error{
+		border: #FF0000 solid 2px;
+	}	
+
+	textarea
+	{
+		height: 80px;
+		resize: none;
+	}
+
+	label
+	{
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	label.has-error
+	{
+		color: #FF0000 !important;
+	}	
+
+	.error_message
+	{
+		padding: 10px;
+		background:#ECF0F1;color:#bdc3c7;
+		margin:10px 0 10px 0;
+	}
+
+	.field_error
+	{
+		padding: 10px;
+		background:#ECF0F1;color:#000;
+		margin:10px 0 10px 0;
+	}
+
+	.field_error i
+	{
+		margin-right: 5px;
+	}
+
+/* FORM STUFF [END] */
+
+.dashboard
+{
+	padding-top: 50px;
+}
+
+.dashboard .icons
+{
+	font-size:3em;
+	text-align:center;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */	
+	width:100%;
+	padding:10px;
+}
+
+.dashboard .icons:last-child
+{
+	margin-right:0;
+}
+
+.dashboard .icons i
+{
+	margin-right:20px;
+}
+
+.list
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.list li
+{
+	position:relative;
+	border-bottom: #999 solid 1px;
+	padding:15px;
+	background: #FFF;
+	cursor:pointer;
+}
+
+.list li:last-child
+{
+	border-bottom: none;
+}
+
+.list li i
+{
+	position: absolute;
+	top:20px;
+	right:10px;
+	opacity:0.3;
+}
+
+.doc_icon
+{
+	font-size:1.5em;
+}
+
+.green
+{
+	color:#008000 !important;
+}
+
+.red
+{
+	color:#800000  !important;
+}
+
+.item 
+{
+  -moz-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+  box-shadow: -2px 2px 0 rgba(0,0,0,0.1);
+  background: #FFF;
+  margin-bottom: 35px;
+  padding: 25px;
+  position: relative;
+}
+
+.signature
+{
+	width:80px !important;
+}
+
+.small-txt
+{
+  font-size: 10px !important;
+}
+
+.row-selected > td
+{
+	background:#FF0000;
+}
