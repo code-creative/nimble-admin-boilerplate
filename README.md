@@ -13,7 +13,7 @@ CREATE TABLE `admin_users` (
   `department` varchar(100) DEFAULT NULL,
   `status` int(1) DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 CREATE TABLE `operatives` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -27,5 +27,5 @@ CREATE TABLE `operatives` (
   `auth_key` varchar(255) DEFAULT NULL,
   `status` int(1) DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin;
 ```
