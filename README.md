@@ -1,4 +1,6 @@
-###Database -- 
+# nimble-admin-boilerplate
+
+### Database -- 
 ```sql
 CREATE TABLE `admin_users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
